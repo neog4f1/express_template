@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "incremental": true,
+    "composite": true,
+    "disableSourceOfProjectReferenceRedirect": false,
+    "disableSolutionSearching": true,
+    "disableReferencedProjectLoad": true,
+    /**/
+    "target": "ESNext",
+    /**/
+    // "experimentalDecorators": true,
+    // "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true /* Enable importing .json files. */,
+    /**/
+    "declaration": true,
+    "sourceMap": false,
+    "removeComments": true,
+    // "noEmit": false /* referenced projects may not disabled emit */,
+    "noEmitOnError": true,
+    /* Interop Constraints */
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    /**/
+    "skipDefaultLibCheck": true /* Skip type checking .d.ts files that are included with TypeScript. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  }
+}

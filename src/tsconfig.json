@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    // "useDefineForClassFields": true,
+    "noEmit": true,
+    // "emitDeclarationOnly": true,
+    // "module": "CommonJS",
+    // "types": ["node"],
+    /**/
+    // "paths": {
+    //  "@myorg/is-even": ["libs/is-even/src/index.ts"],
+    //  "tests/*": ["tests/*"]
+    // } /* baseUrl must be specified if "paths" is specified. */,
+    // "baseUrl": ".",
+    // "baseUrl": "https://www.example.com" /* resolving external modules, import 'foo.js' */,
+    "sourceRoot": "." /* resolving relative paths */,
+    "rootDir": "." /* the resulting JavaScript code doesn’t flow intolib/src/ but into lib/ where it belongs */,
+    "outDir": "../dist"
+  },
+  // "include": ["src"] /* not need if this file in src */,
+  "ts-node": { "esm": true, "transpileOnly": true }
+}
