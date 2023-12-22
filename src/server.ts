@@ -2,7 +2,7 @@ import { type Server } from "http";
 // import { config } from "dotenv-safe";
 
 import { app } from "./app";
-// import { connectDB } from "./common/config/db";
+// import { connectDb } from "./common/config/db";
 // import { EmailSender, NodemailerEmailAPI } from "./routes/auth";
 
 // const parseNodeEnv = process.env.NODE_ENV || "development";
@@ -14,9 +14,9 @@ import { app } from "./app";
 // const dotenv = require("dotenv").config({
 //  path: process.cwd() + "/backend/.server.env"
 // });
-// const { connectDB } = require("./common/config/db");
+// const { connectDb } = require("./common/config/db");
 
-// connectDB(); // if have any issues, go mongodb > security > network access > add ip
+// connectDb(); // if have any issues, go mongodb > security > network access > add ip
 
 const port = process.env.PORT || 3333;
 let server: Server;
@@ -26,12 +26,12 @@ let server: Server;
 // emailSender.setEmailAPI(new NodemailerEmailAPI());
 
 // Connect to the database and then starting the server
-// connectDB()
+// connectDb()
 //   .then(() => {
 //     server = app.listen(port, async () => {
 //       console.log("server started on port", port);
 
-//       // await connectDB();
+//       // await connectDb();
 
 //       // const res = await emailSender.sendRegisterVerificationEmail({ toEmail: "neog4.f1@yopmail.com" });
 //       // console.log(res);
