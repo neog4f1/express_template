@@ -18,5 +18,5 @@
     "outDir": "../dist"
   },
   // "include": ["src"] /* not need if this file in src */,
-  "ts-node": { "esm": true, "transpileOnly": true }
+  // "ts-node": { "esm": true, "transpileOnly": true }
 }
