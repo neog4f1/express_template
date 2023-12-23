@@ -1,7 +1,11 @@
-FROM node:lts
+FROM node:lts AS builder
 
-# WORKDIR /code
+WORKDIR /code
 
-# Install basic development tools
-# RUN apt update && apt install -y less man-db sudo
-RUN apt update && apt install -y sudo
+COPY ./package.json ./
+RUN npm i
+
+COPY . .
+RUN npm run build
+
+CMD ["npm", "run", "start"]

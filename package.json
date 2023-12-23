@@ -1,18 +1,23 @@
 {
-  "name": "express-postgres",
+  "name": "server",
   "version": "1.0.0",
-  "main": "src/server.ts",
   "type": "module",
+  "main": "./src/server.ts",
   "scripts": {
+    "build": "vite build --ssr src/server.ts --outDir dist",
+    "build:tsc": "rm -rf ./dist && tsc -p ./src/tsconfig.json",
     "dev": "tsx watch ./src/server.ts",
-    "start": "NODE_ENV=production tsx ./src/server.ts"
+    "start:tsx": "NODE_ENV=production tsx ./src/server.ts",
+    "start": "node ./dist/server.js"
   },
   "dependencies": {
+    "cors": "*",
     "express": "*",
-    "pg": "*",
-    "cors": "*"
+    "pg": "*"
   },
   "devDependencies": {
-    "tsx": "*"
+    "tsx": "*",
+    "@types/node": "*",
+    "vite": "*"
   }
 }
