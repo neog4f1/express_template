@@ -1,9 +1,10 @@
 services:
   server:
-    build: .
+    build: ./Dockerfile.dev
     image: server
-    ports:
-      - 5555:5555
     volumes:
+      - /code/dist # just for test
       - /code/node_modules
       - .:/code:cached
+    ports:
+      - 5555:5555
