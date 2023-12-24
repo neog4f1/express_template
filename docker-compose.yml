@@ -3,7 +3,7 @@ services:
     build: ./Dockerfile.dev
     image: server
     volumes:
-      - /code/dist # just for test
+      # - /code/dist # just test, maybe only for build watch mode
       - /code/node_modules
       - .:/code:cached
     ports:

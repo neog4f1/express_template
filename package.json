@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/server.ts",
+  "main": "./dist/server.js",
   "scripts": {
-    "build": "vite build --ssr src/server.ts --outDir dist",
+    "build": "npx vite build --ssr src/server.ts --outDir dist",
     "build:tsc": "rm -rf ./dist && tsc -p ./src/tsconfig.json",
     "dev": "tsx watch ./src/server.ts",
     "start:tsx": "NODE_ENV=production tsx ./src/server.ts",
@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "tsx": "*",
-    "@types/node": "*",
-    "vite": "*"
+    "@types/node": "*"
   }
 }
