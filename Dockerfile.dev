@@ -1,13 +1,12 @@
-FROM node:lts
+# node: latest, lts, slim, lts-slim, alpine, lts-alpine
+FROM node:lts-alpine
 
 WORKDIR /code
 
 # Install basic development tools
 # RUN apt update && apt install -y less man-db sudo
 
-COPY ./package.json ./
-RUN npm i
-
 COPY . .
+RUN npm i
 
 CMD ["npm", "run", "dev"]

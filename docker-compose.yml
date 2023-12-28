@@ -2,9 +2,10 @@ services:
   server:
     build: ./Dockerfile.dev
     image: server
-    volumes:
-      # - /code/dist # just test, maybe only for build watch mode
+    volumes: # only for dev hot reload, not need in production
       - /code/node_modules
       - .:/code:cached
-    ports:
-      - 5555:5555
+    ports: # not need if use nginx
+      - 80:5555
+    # stdin_open: true # `docker run -i`
+    # tty: true # `docker run -t`
