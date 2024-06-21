@@ -12,11 +12,15 @@
   },
   "dependencies": {
     "cors": "*",
-    "express": "*",
-    "pg": "*"
+    "dotenv-safe": "*",
+    "express": "*"
   },
   "devDependencies": {
+    "@types/cors": "*",
+    "@types/dotenv-safe": "*",
+    "@types/express": "*",
+    "@types/node": "*",
     "tsx": "*",
-    "@types/node": "*"
+    "typescript": "*"
   }
 }

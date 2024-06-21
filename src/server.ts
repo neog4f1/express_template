@@ -1,14 +1,14 @@
+import { config } from "dotenv-safe";
 import { type Server } from "http";
-// import { config } from "dotenv-safe";
 
 import { app } from "./app";
 // import { connectDb } from "./common/config/db";
 // import { EmailSender, NodemailerEmailAPI } from "./routes/auth";
 
-// const parseNodeEnv = process.env.NODE_ENV || "development";
+config();
 // config({
 //   path: process.cwd() + "/.env", allowEmptyValues: true
-//   // path: parseNodeEnv.trim() === developlemnt ? "/.env.dev" "./env.production", allowEmptyValues: true
+//   // path: process.env.NODE_ENV && process.env.NODE_ENV.trim() === development ? "/.env.dev" "./env.production", allowEmptyValues: true
 // });
 
 // const dotenv = require("dotenv").config({
@@ -19,7 +19,7 @@ import { app } from "./app";
 // connectDb(); // if have any issues, go mongodb > security > network access > add ip
 
 const port = process.env.PORT || 3333;
-let server: Server;
+// let server: Server;
 
 // const emailSender = EmailSender.getInstance();
 // emailSender.active();
