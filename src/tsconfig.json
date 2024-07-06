@@ -17,6 +17,6 @@
     // "sourceRoot": "." /* resolving relative paths */,
     "rootDir": "." /* the resulting JavaScript code doesn’t flow intolib/src/ but into lib/ where it belongs */,
     "outDir": "../dist"
-  },
+  }
   // "include": ["src"] /* not need if this file in src */,
 }

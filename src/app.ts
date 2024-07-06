@@ -27,13 +27,12 @@ const app = express();
 // 	next();
 // });
 app.use(
-	cors({
-		// allowedHeaders: "*",
-		// methods: "*",
-		// origin: "*" /*bee.com*/,
-		credentials:
-			true /* allow credentials (cookies or authorization headers) through, in client make fetch need something like credentials: include, to make sure cookie get passed along with all of your different requests otherwise they do not get passed along by default */,
-	})
+  cors({
+    // allowedHeaders: "*",
+    // methods: "*",
+    // origin: "*" /*bee.com*/,
+    credentials: true /* allow credentials (cookies or authorization headers) through, in client make fetch need something like credentials: include, to make sure cookie get passed along with all of your different requests otherwise they do not get passed along by default */,
+  })
 );
 // app.use(cookieParser());
 app.use(express.json()); // make req.body work if content-type: application/json

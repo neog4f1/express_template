@@ -40,7 +40,7 @@ const port = process.env.PORT || 3333;
 //   .catch((err) => console.log(err));
 
 const server = app.listen(port, () =>
- console.log("server start on port", port)
+  console.log("server start on port", port)
 );
 
 export { server };
