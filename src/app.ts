@@ -7,6 +7,7 @@ import cors from "cors";
 // import { productRoutes } from "./routes/products";
 // import { authRoutes } from "./routes/auth";
 // import { errorHandler } from "./common/middleware";
+import authRoute0 from "./features/auth/route0";
 
 // const express = require("express");
 // const cors = require("cors");
@@ -39,6 +40,7 @@ app.use(express.json()); // make req.body work if content-type: application/json
 app.use(express.urlencoded({ extended: false })); // the urlencoded data is parsed with the querystring library, which only supports simple key-value pairs
 
 // routes
+app.use("/users", authRoute0);
 // app.use(productRoutes);
 // app.use(authRoutes);
 // app.use("/api/auth", require("./routes/auth"));

@@ -1,5 +1,4 @@
 import { config } from "dotenv-safe";
-import { type Server } from "http";
 
 import { app } from "./app";
 // import { connectDb } from "./common/config/db";
@@ -18,7 +17,7 @@ config();
 
 // connectDb(); // if have any issues, go mongodb > security > network access > add ip
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 6789;
 // let server: Server;
 
 // const emailSender = EmailSender.getInstance();

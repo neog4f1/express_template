@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "cors": "*",
-    "express": "*"
+    "express": "*",
+    "express-jwt": "*",
+    "jwks-rsa": "*"
   },
   "devDependencies": {
     "@types/cors": "*",
