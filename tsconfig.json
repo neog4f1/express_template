@@ -1,6 +1,5 @@
 {
   "files": [] /* Don't forget to set the files property, or else you're at risk of getting some surprise JavaScript files in directories you don't want them to be */,
-  "include": [],
   "references": [{ "path": "./src" }]
   // "ts-node": { "esm": true, "transpileOnly": true }
 }

@@ -11,17 +11,23 @@
     "start": "node ./dist/server.js"
   },
   "dependencies": {
+    "cloudinary": "*",
     "cors": "*",
+    "dotenv-safe": "*",
     "express": "*",
     "express-jwt": "*",
-    "jwks-rsa": "*"
+    "express-validator": "*",
+    "jwks-rsa": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "stripe": "*"
   },
   "devDependencies": {
     "@types/cors": "*",
     "@types/dotenv-safe": "*",
     "@types/express": "*",
+    "@types/multer": "*",
     "@types/node": "*",
-    "dotenv-safe": "*",
     "tsx": "*",
     "typescript": "*"
   }
